@@ -50,7 +50,7 @@ $docker-compose up test
 ## Run script locally without Docker
 
 Install node(<strong>>=13</strong>).
-note: there is compatible issue with date-fns when node < 13, thus you won't get correct output if node is old. you can use docker to run the script if your node version is <= 13.
+note that there is compatible issue with date-fns when node < 13, thus you won't get correct output if node is old. you can use docker to run the script if your node version is <= 13.
 
 ### Install npm dependencies:
 

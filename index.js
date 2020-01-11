@@ -5,7 +5,6 @@ const APPOINTMENT_INPUTFILE = `${__dirname}/input/sample.txt`;
 
 if (require.main === module) {
   processTimeConflictCheck(APPOINTMENT_INPUTFILE, OUTPUTFILE).then(() => {
-    //a
     console.log(
       `Appointment datetime validating finished.` +
         ` Please check ${OUTPUTFILE} file for details`

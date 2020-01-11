@@ -13,6 +13,23 @@ Examples:
 
 This is a sample script to validate date time range values in txt file `\input\sample.txt` and then generate a `\output\ouput.txt` with conflict flag attached to each time ranges in file.
 
+Input file example:
+
+```
+[[2020-01-06 08:00, 240], [2020-01-06 09:15, 15]]
+sss
+[[2020-01-06 08:00, 10], [2020-01-06 07:15, 65]]
+[[2020-01-06 11:00, 10], [2020-01-06 11:15, -45]]
+```
+
+Output file example:
+
+```
+[[2020-01-06 08:00, 240], [2020-01-06 09:15, 15]] --> true
+[[2020-01-06 08:00, 10], [2020-01-06 07:15, 65]] --> true
+[[2020-01-06 11:00, 10], [2020-01-06 11:15, -45]] --> true
+```
+
 ## Run script locally with Docker
 
 Install and setup docker, then run following cli commend:

@@ -27,7 +27,7 @@ const processTimeConflictCheck = (inputFile, outputFile) => {
       });
 
       lineReader.on("close", () => {
-        resolve("process succeed");
+        resolve("proceed successfully");
       });
     } catch (e) {
       reject(e);
